@@ -7,5 +7,5 @@ class Config:
     JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
     MODEL = os.getenv("MODEL")
     MONGO_URI = os.getenv("MONGO_URI")  # Update this URI
-    
+    OPENAI_API_KEY=os.getenv('OPENAI_API_KEY')
 
