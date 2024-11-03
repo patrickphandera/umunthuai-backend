@@ -105,7 +105,6 @@ python-dateutil
 python-iso639==2024.4.27
 python-magic==0.4.27
 pytz==2024.1
-pywin32==306
 PyYAML==6.0.2
 pyzmq 
 rapidfuzz==3.9.6

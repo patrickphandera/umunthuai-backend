@@ -23,6 +23,7 @@ CORS(app)
 
 # Set up OpenAI API key
 openai.api_key = os.getenv("OPENAI_API_KEY") 
+MODEL = os.getenv("MODEL") 
 blacklist = set() 
 system_context = 'you are a helpful assistant that answers question from user from chichewa constitution of malawi in the form Chapter:<constitution_chapter>,Section:<costitution_section>, <answer_from_chichewa_constititution>'
 
@@ -38,7 +39,7 @@ def user_to_json(user):
 
 def query_model(query):
     try:
-        MODEL = "ft:gpt-4o-mini-2024-07-18:personal::AC58hskg"
+        
         response = openai.chat.completions.create(
             model=MODEL,
             messages=[
