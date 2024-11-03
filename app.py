@@ -268,5 +268,3 @@ def logout():
     blacklist.add(token)  # Add token to blacklist
     return "Successfully logged out", 200
 
-if __name__=='__main__':
-    app.run()
